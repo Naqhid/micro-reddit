@@ -1,8 +1,8 @@
 class CreateAddCategoryToPosts < ActiveRecord::Migration[6.1]
   def change
-    add_column :posts, :category, :string
+    add_column :posts, :category, :string do |t|
 
-      t.timestamps
+      t.timestamps 
     end
   end
 end
